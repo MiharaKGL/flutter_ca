@@ -36,6 +36,29 @@ class _studyTrackerState extends State<studyTracker> {
         backgroundColor: const Color.fromARGB(255, 77, 201, 210),
         centerTitle: true,
       ),
+
+      body: Padding(padding: EdgeInsets.all(25.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Card(
+            color: Colors.cyanAccent,
+            elevation: 4,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            child: Column(
+              children: [
+                Text("To Do List",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      ),
     );
   }
 }
