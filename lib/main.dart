@@ -53,6 +53,13 @@ class _studyTrackerState extends State<studyTracker> {
                   fontWeight: FontWeight.bold,
                 ),
                 ),
+
+                Text("GPA Calculator",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
               ],
             ),
           ),
