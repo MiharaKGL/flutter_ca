@@ -49,21 +49,27 @@ class _LoginPageState extends State<LoginPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 60),
-            Image(image: AssetImage("assets/book.jpeg"),
-              height: 200,
-              width: 200,
-            ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
+            
+              
+              Image(image: NetworkImage("https://cdn.pixabay.com/photo/2021/12/29/20/22/child-6902674_1280.png"),
+              height: 300,
+              width: 300,
+              //Image(image: AssetImage("assets/book.jpeg"),
+              ),
+
+          
+          
+            const SizedBox(height: 7),
             const Text(
               "SpellAura",
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.amber),
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 238, 211, 35)),
             ),
             const Text(
               "The Book Store",
-              style: TextStyle(fontSize: 16, color: Colors.white70),
+              style: TextStyle(fontSize: 20, color: Colors.white70),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -80,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       child: Column(
                         children: [
-                          const Text("Sign In", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                          const Text("Sign In", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 52, 114, 195))),
                           const SizedBox(height: 10),
                           TextField(
                             controller: _loginUsername,
@@ -113,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       child: Column(
                         children: [
-                          const Text("Sign Up", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                          const Text("Sign Up", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 52, 114, 195))),
                           const SizedBox(height: 10),
                           TextField(
                             controller: _signupUsername,
