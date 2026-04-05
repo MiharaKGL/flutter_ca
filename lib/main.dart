@@ -36,38 +36,6 @@ class SpellAuraApp extends StatelessWidget {
         ),
       ),
       home: const LoginPage(), // Setup the initial route
-
-      body: Padding(padding: EdgeInsets.all(25.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Card(
-            color: Colors.cyanAccent,
-            elevation: 4,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              children: [
-                Text("To Do List",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-
-                Text("GPA Calculator",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-      ),
     );
   }
 }
-
-//changed
