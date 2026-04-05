@@ -29,7 +29,7 @@ class BookListPage extends StatelessWidget {
                     Row(
                       children: [
                         BookCard(book: Book(title: "The Magic Spell", price: 1500, description: "A magical adventure.",
-                         imageUrl: "assets/image1.jpg")),
+                         imageUrl: "assets/image2.jpg")),
                         const SizedBox(width: 15),
                         BookCard(book: Book(title: "Dragon's Lair", price: 2000, description: "Fight the ancient dragon.", imageUrl: "assets/image3.jpg")),
                         const SizedBox(width: 15),
