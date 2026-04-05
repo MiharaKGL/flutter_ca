@@ -1,73 +1,44 @@
-                                                                                                  S                                                                                                                                                                                                                                                                         QQimport 'package:flutter/material.dart';
+                                                                                                                                                                                                                                                                                                                                                           QQimport 'package:flutter/material.dart';
+
+import 'package:flutter/material.dart';
+import 'pages/login_page.dart';
+
 
 void main() {
-  runApp(const AppHome());
+  runApp(const SpellAuraApp());
 }
 
-class AppHome extends StatelessWidget {
-  const AppHome({super.key});
+class SpellAuraApp extends StatelessWidget {
+  const SpellAuraApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'SpellAura the Book Store',
       debugShowCheckedModeBanner: false,
-      home: studyTracker(),
-    );
-  }
-}
-
-class studyTracker extends StatefulWidget {
-  const studyTracker({super.key});
-
-  @override
-  State<studyTracker> createState() => _studyTrackerState();
-}
-
-class _studyTrackerState extends State<studyTracker> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Welcome to your Study Tracker",
-          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFF0D1B2A), // Dark blue magical theme
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF1B263B), // Lighter blue for AppBar
+          foregroundColor: Colors.white,
         ),
-        backgroundColor: const Color.fromARGB(255, 77, 201, 210),
-        centerTitle: true,
-      ),
-
-      body: Padding(padding: EdgeInsets.all(25.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Card(
-            color: Colors.cyanAccent,
-            elevation: 4,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              children: [
-                Text("To Do List",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-
-                Text("GPA Calculator",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
-              ],
-            ),
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.white),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color(0xFF415A77), // Button color
+            foregroundColor: Colors.white,
           ),
-        ],
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          labelStyle: TextStyle(color: Colors.white70),
+          enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.white54)),
+          focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.amber)),
+        ),
       ),
-      ),
+      home: const LoginPage(), // Setup the initial route
     );
   }
 }
-
-
