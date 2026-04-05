@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             const SizedBox(height: 60),
-            Image(image: AssetImage("assets/image1.jpg"),
+            Image(image: AssetImage("assets/book.jpeg"),
               height: 120,
               width: 120,
             ),
