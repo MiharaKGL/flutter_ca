@@ -25,31 +25,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              const Text("Welcome to the Magical Realm!", style: TextStyle(fontSize: 20, color: Colors.amber)),
-              const SizedBox(height: 30),
-              
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  CategoryCard(title: "Fantasy", imageUrl: "https://cdn-icons-png.flaticon.com/512/3715/3715167.png"),
-                  CategoryCard(title: "Adventure", imageUrl: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png"),
-                ],
-              ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  CategoryCard(title: "Kids", imageUrl: "https://cdn-icons-png.flaticon.com/512/3081/3081079.png"),
-                  CategoryCard(title: "Mystery", imageUrl: "https://cdn-icons-png.flaticon.com/512/2838/2838703.png"),
-                ],
-              ),
-            ],
-          ),
-        ),
+        
       ),
     );
   }
