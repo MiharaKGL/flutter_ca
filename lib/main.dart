@@ -10,7 +10,7 @@ class SpellAuraApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    var materialApp = MaterialApp(
       title: 'SpellAura the Book Store',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -65,9 +65,10 @@ class SpellAuraApp extends StatelessWidget {
           ),
         ],
       ),
-      ),
+    ),
     );
+    return materialApp;
   }
 }
 
-//changed III
+//changed IV
