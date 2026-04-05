@@ -6,10 +6,10 @@ class CategoryCard extends StatelessWidget {
   final String imageUrl;
 
   const CategoryCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   void _goToCategory(BuildContext context) {
     Navigator.push(

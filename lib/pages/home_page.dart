@@ -4,7 +4,7 @@ import 'profile_page.dart';
 import '../widgets/category_card.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   void _goToCart(BuildContext context) {
     Navigator.push(context, MaterialPageRoute(builder: (context) => const CartPage()));

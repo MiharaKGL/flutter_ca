@@ -6,9 +6,9 @@ class BookCard extends StatelessWidget {
   final Book book;
 
   const BookCard({
-    Key? key,
+    super.key,
     required this.book,
-  }) : super(key: key);
+  });
 
   void _addToCart(BuildContext context) {
     globalCart.add(book);

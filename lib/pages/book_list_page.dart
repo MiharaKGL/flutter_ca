@@ -5,7 +5,7 @@ import '../models/book.dart';
 class BookListPage extends StatelessWidget {
   final String category;
   
-  const BookListPage({Key? key, required this.category}) : super(key: key);
+  const BookListPage({super.key, required this.category});
 
   @override
   Widget build(BuildContext context) {

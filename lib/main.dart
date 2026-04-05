@@ -6,7 +6,7 @@ void main() {
 }
 
 class SpellAuraApp extends StatelessWidget {
-  const SpellAuraApp({Key? key}) : super(key: key);
+  const SpellAuraApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,4 +40,4 @@ class SpellAuraApp extends StatelessWidget {
   }
 }
 
-//changed
+//changed III
