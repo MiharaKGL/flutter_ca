@@ -36,7 +36,7 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Icon(Icons.person, size: 80, color: Colors.amber),
+                const Image(image: NetworkImage("https://cdn.pixabay.com/photo/2017/01/31/20/31/animal-2027045_1280.png"),height: 300, width: 300,),
                 const SizedBox(height: 20),
                 Text("Username: $globalUsername", style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 15),

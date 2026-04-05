@@ -3,6 +3,7 @@ import 'cart_page.dart';
 import 'profile_page.dart';
 import '../widgets/category_card.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -13,6 +14,8 @@ class HomePage extends StatelessWidget {
   void _goToProfile(BuildContext context) {
     Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfilePage()));
   }
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -29,22 +32,22 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              const Text("Welcome to the Magical Realm!", style: TextStyle(fontSize: 20, color: Colors.amber)),
+              const Text("Welcome to the Magical Realm!", style: TextStyle(fontSize: 40, color: Colors.amber)),
               const SizedBox(height: 30),
               
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
-                  CategoryCard(title: "Fantasy", imageUrl: "https://cdn-icons-png.flaticon.com/512/3715/3715167.png"),
-                  CategoryCard(title: "Adventure", imageUrl: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png"),
+                  CategoryCard(title: "Fantacy", imageUrl: "https://cdn.pixabay.com/photo/2023/12/07/11/11/girl-8435339_1280.png"),
+                  CategoryCard(title: "Adventure", imageUrl: "https://cdn.pixabay.com/photo/2023/03/17/14/26/bear-7858736_1280.jpg"),
                 ],
               ),
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
-                  CategoryCard(title: "Kids", imageUrl: "https://cdn-icons-png.flaticon.com/512/3081/3081079.png"),
-                  CategoryCard(title: "Mystery", imageUrl: "https://cdn-icons-png.flaticon.com/512/2838/2838703.png"),
+                  CategoryCard(title: "Kids", imageUrl: "https://cdn.pixabay.com/photo/2023/10/06/10/55/toddler-8297939_1280.jpg"),
+                  CategoryCard(title: "Mystery", imageUrl: "https://cdn.pixabay.com/photo/2026/02/28/19/02/kyraxys-alien-10149042_1280.png"),
                 ],
               ),
             ],

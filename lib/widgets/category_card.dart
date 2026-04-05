@@ -27,16 +27,16 @@ class CategoryCard extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: Container(
         padding: const EdgeInsets.all(16),
-        width: 140, // Fixed width helps align rows consistently
+        width: 500, // Fixed width helps align rows consistently
         child: Column(
           children: [
-            Image.network(imageUrl, height: 70, width: 70), // Cartoon image
+            Image.network(imageUrl, height: 300, width: 300), // Cartoon image
             const SizedBox(height: 10),
-            Text(title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
+            Text(title, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white)),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () => _goToCategory(context),
-              child: const Text("View Books", style: TextStyle(fontSize: 12)),
+              child: const Text("View Books", style: TextStyle(fontSize: 20)),
             )
           ],
         ),
