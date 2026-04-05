@@ -50,8 +50,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             const SizedBox(height: 60),
-            Image.network(
-              'https://cdn-icons-png.flaticon.com/512/3004/3004613.png',
+            Image(image: AssetImage("assets/image1.jpg"),
               height: 120,
               width: 120,
             ),
@@ -165,5 +164,6 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
+  
   }
 }
